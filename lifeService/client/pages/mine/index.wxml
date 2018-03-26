@@ -9,6 +9,15 @@
   </view>
 
   <!-- 客服 -->
+  <view class="deg">
+    <button open-type='contact' session-from='weapp'>
+      <image src='../../images/customer_service.png' mode='widthFix'></image>
+      <text>联系客服</text>
+    </button>
+  </view>
   <view>
+    <contact-button type="default" size="27" session-from="weapp">
+    联系客服
+    </contact-button>
   </view>
 </view>

@@ -13,17 +13,22 @@
   },
   "tabBar": {
     "color": "#7A7E83",
-    "selectedColor": "#3cc51f",
     "borderStyle": "black",
     "backgroundColor": "#ffffff",
     "list": [{
       "pagePath": "pages/index/index",
+      "iconPath": "./images/find.png",
+      "selectedIconPath": "./images/find_selected.png",
       "text": "发现"
     },{
       "pagePath": "pages/information/index",
+      "iconPath": "./images/infor.png",
+      "selectedIconPath": "./images/infor_selected.png", 
       "text": "资讯"
     },{
       "pagePath": "pages/mine/index",
+      "iconPath": "./images/mine.png",
+      "selectedIconPath": "./images/mine_selected.png", 
       "text": "我的"
     }]
   }

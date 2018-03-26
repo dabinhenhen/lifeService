@@ -1,16 +1,17 @@
 /* pages/mine/index.wxss */
+
 page {
-    background: #F6F6F6;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .userinfo {
-    height: 400rpx;
-    width: 100%;
-    background: #FFFF00;
-    /*
+  height: 400rpx;
+  width: 100%;
+  background: #ff0;
+  /*
     border: 1px solid rgba(0, 0, 0, .1);
     border-top: none;
     border-left: none;
@@ -20,7 +21,7 @@ page {
     align-items: center;
     transition: all 300ms ease;
     */
-    text-align:center;
+  text-align: center;
 }
 
 .userinfo-avatar {
@@ -31,14 +32,33 @@ page {
   min-height: 10rpx;
   max-width: 200rpx;
   min-width: 10rpx;
-
   border-radius: 50%;
   border-width: 10rpx;
-  border-color:beige;
-  border-style:solid; /*边缘为实心*/
+  border-color: beige;
+  border-style: solid; /*边缘为实心*/
 }
 
 .userinfo-nickname {
-    font-size: 32rpx;
-    color: #007AFF;
+  font-size: 32rpx;
+  color: #007aff;
+}
+
+.deg button {
+  border: none;
+  height: 190rpx;
+  background: none;
+  border-radius: 0;
+  line-height: 190rpx;
+  color: #333;
+  font-size: 20rpx;
+  text-align: center;
+}
+
+.deg button image{
+  height: 100rpx;
+  width: 100rpx;
+}
+
+.deg button:after {
+  border: none;
 }
