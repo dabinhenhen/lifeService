@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/information/index",
+    "pages/mine/index"
+  ],
+  "window": {
+    "backgroundColor":"#FFFF00",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFFF00",
+    "navigationBarTitleText": "驻在上海",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "发现"
+    },{
+      "pagePath": "pages/information/index",
+      "text": "资讯"
+    },{
+      "pagePath": "pages/mine/index",
+      "text": "我的"
+    }]
+  }
+}

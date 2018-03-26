@@ -1,0 +1,44 @@
+/* pages/mine/index.wxss */
+page {
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.userinfo {
+    height: 400rpx;
+    width: 100%;
+    background: #FFFF00;
+    /*
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: all 300ms ease;
+    */
+    text-align:center;
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 20rpx;
+  max-height: 200rpx;
+  min-height: 10rpx;
+  max-width: 200rpx;
+  min-width: 10rpx;
+
+  border-radius: 50%;
+  border-width: 10rpx;
+  border-color:beige;
+  border-style:solid; /*边缘为实心*/
+}
+
+.userinfo-nickname {
+    font-size: 32rpx;
+    color: #007AFF;
+}

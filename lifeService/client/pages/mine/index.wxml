@@ -1,0 +1,14 @@
+<!--pages/mine/index.wxml-->
+<view class="container">
+  <!-- 用户登录测试 -->
+  <view class="userinfo" bindtap="login">
+    <image class="userinfo-avatar" src="{{logged ? userInfo.avatarUrl : './user-unlogin.png'}}" background-size="cover"></image>
+    <view>
+      <text class="userinfo-nickname">{{logged ? userInfo.nickName : '点击登录'}}</text>
+    </view>
+  </view>
+
+  <!-- 客服 -->
+  <view>
+  </view>
+</view>
