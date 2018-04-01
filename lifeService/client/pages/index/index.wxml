@@ -2,19 +2,72 @@
 <view class="container">
   <view class="page-body">
     <!--swiper area-->
-    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange='bindchange'>
       <block wx:for="{{imgUrls}}" wx:key="*this">
         <!-- background 高度适应，显示清晰
-        -->
         <swiper-item style="background:url({{item}});background-repeat: no-repeat;background-size:100% 200px; ">
         </swiper-item>
-        <!-- image 显示不清晰
-        <swiper-item>
-          <image src="{{item}}" class="slide-image"/>
-        </swiper-item>
         -->
+        <!-- image 显示不清晰
+        -->
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" mode="widthFix" bindtap='onSwipClick' />
+        </swiper-item>
       </block>
     </swiper>
 
+    <!--func button area-->
+    <view class="container">
+      <!--
+      <view class="flex-wrp" style="flex-direction:column;">
+        <view class="flex-item flex-item-V">
+          <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item">
+              <button>
+              </button>
+            </view>
+            <view class="flex-item">2</view>
+            <view class="flex-item">3</view>
+            <view class="flex-item">4</view>
+          </view>
+        </view>
+        <view class="flex-item flex-item-V">
+          <view class="flex-wrp" style="flex-direction:row;">
+            <view class="flex-item">1</view>
+            <view class="flex-item">2</view>
+            <view class="flex-item">3</view>
+            <view class="flex-item">
+              <button open-type='contact' session-from='weapp'>
+                <image src='../../images/customer_service.png' mode='widthFix'></image>
+              </button>
+            </view>
+          </view>
+        </view>
+      </view>
+      -->
+      <view class="classifyiconWrap" data-c_e_id="wx_view687aaf2e">
+        <view class="classifyicongrid" data-c_e_id="wx_view1ae8f9cf">
+
+          <block wx:for="{{funcIcons}}" wx:key="text">
+            <navigator class="wx-navigator" hover-class="navigator-hover" url="{{item.url}}">
+              <image class="wx-navigator-image" src="{{item.image}}" />
+              <text class="wx-navigator-text">{{item.text}}</text>
+            </navigator>
+          </block>
+
+          <!--contact button-->
+          <navigator class="wx-navigator" hover-class="navigator-hover">
+            <button class="wx-navigator-button" open-type='contact' session-from='weapp'>
+              <image src='../../images/customer_service.png' mode='widthFix' style='width:44px; height:44px' />
+            </button>
+            <text class="wx-navigator-text">客服</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+
+    <!-- find new-->
+  <scroll-view >
+  </scroll-view>
   </view>
 </view>

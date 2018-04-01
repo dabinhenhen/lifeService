@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/information/index",
-    "pages/mine/index"
+    "pages/mine/index",
+    "pages/chat/chat"
   ],
   "window": {
     "backgroundColor":"#FFFF00",

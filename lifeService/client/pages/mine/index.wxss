@@ -42,23 +42,3 @@ page {
   font-size: 32rpx;
   color: #007aff;
 }
-
-.deg button {
-  border: none;
-  height: 190rpx;
-  background: none;
-  border-radius: 0;
-  line-height: 190rpx;
-  color: #333;
-  font-size: 20rpx;
-  text-align: center;
-}
-
-.deg button image{
-  height: 100rpx;
-  width: 100rpx;
-}
-
-.deg button:after {
-  border: none;
-}
