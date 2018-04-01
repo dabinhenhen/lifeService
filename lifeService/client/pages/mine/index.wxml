@@ -1,17 +1,27 @@
 <!--pages/mine/index.wxml-->
-<view class="container">
+<view>
   <!-- 用户登录测试 -->
   <view class="userinfo" bindtap="login">
     <image class="userinfo-avatar" src="{{logged ? userInfo.avatarUrl : '../../images/user-unlogin.png'}}" background-size="cover"></image>
     <view>
       <text class="userinfo-nickname">{{logged ? userInfo.nickName : '点击登录'}}</text>
     </view>
+
   </view>
 
-  <!-- 客服 -->
+  <!-- 客服 
   <view>
     <contact-button type="default" size="27" session-from="weapp">
-      联系客服
     </contact-button>
+  </view>
+  -->
+  <view>
+    <block wx:for="{{settingInfo}}" wx:key="text">
+      <view class="line">
+        <view bindtap="{{item.event}}" class="item">
+          <view class="item-inner">{{item.text}}</view>
+        </view>
+      </view>
+    </block>
   </view>
 </view>

@@ -42,3 +42,39 @@ page {
   font-size: 32rpx;
   color: #007aff;
 }
+
+.line {
+  margin-top: 10rpx;
+}
+
+.line .item {
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 32rpx;
+  position: relative;
+}
+
+.line .item:active {
+  background: #d9d9d9;
+}
+
+.line .item-inner {
+  height: 90rpx;
+  line-height: 90rpx;
+}
+
+@media (max-width : 360px) {
+  .line .item-inner {
+    height: 110rpx;
+    line-height: 110rpx;
+  }
+
+  .line .item {
+    height: 110rpx;
+    line-height: 110rpx;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 32rpx;
+    position: relative;
+  }
+}

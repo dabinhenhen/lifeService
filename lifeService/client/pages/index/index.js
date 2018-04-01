@@ -19,12 +19,12 @@ Page({
 
     //[ 功能按钮 ]
     funcIcons: [
-      { image: '../../images/infor.png', url: './index', text: '美容' },
-      { image: '../../images/infor_selected.png', url: './index', text: '玩乐' },
-      { image: '../../images/infor.png', url: './index', text: '美食' },
-      { image: '../../images/infor.png', url: './index', text: '政策' },
-      { image: '../../images/infor.png', url: './index', text: '母婴' },
-      { image: '../../images/infor.png', url: './index', text: '健康' },
+      { image: '../../images/lawyer.png', url: './index', text: '政策' },
+      { image: '../../images/education.png', url: './index', text: '教育' },
+      { image: '../../images/medical.png', url: './index', text: '医疗' },
+      { image: '../../images/house.png', url: './index', text: '住房' },
+      { image: '../../images/play.png', url: './index', text: '玩乐' },
+      { image: '../../images/food.png', url: './index', text: '美食' },
       { image: '../../images/chat.png', url: '../chat/chat', text: '聊天' },
     ]
   },

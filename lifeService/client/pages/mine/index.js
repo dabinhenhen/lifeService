@@ -12,9 +12,32 @@ Page({
     userInfo: {},
     logged: false,
     takeSession: false,
-    requestResult: ''
+    requestResult: '',
+
+    //[ 界面设定 ]
+    settingInfo: [
+      { text: '我的发布', event: 'onTapPublish' },
+      { text: '我的收藏', event: 'onTapStore' },
+      { text: '未读消息', event: 'onTapUnopenMessage' },
+      { text: '授权管理', event: 'onTapAuthorMng' }
+    ]
   },
 
+  onTapPublish: function(){
+    util.showSuccess("点击我的发布");
+  },
+
+  onTapStore: function () {
+    util.showSuccess("点击我的收藏");
+  },
+
+  onTapUnopenMessage: function () {
+    util.showSuccess("点击未读消息");
+  },
+
+  onTapAuthorMng: function () {
+    util.showSuccess("点击授权管理");
+  },
   // 用户登录示例
   login: function () {
     if (this.data.logged) return
@@ -63,55 +86,55 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+
   },
 
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
-  
+
   },
 
   /**
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-  
+
   }
 })
